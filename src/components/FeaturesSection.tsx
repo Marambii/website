@@ -40,29 +40,32 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="group relative bg-gradient-card rounded-2xl p-8 shadow-elegant hover:shadow-glow transition-all duration-500 hover:-translate-y-2"
+              className="group relative h-80 w-full perspective-1000"
             >
-              <div className="space-y-6">
-                <div className={`w-16 h-16 bg-gradient-to-br ${feature.color} rounded-2xl flex items-center justify-center shadow-glow group-hover:scale-110 transition-transform duration-300`}>
-                  <feature.icon className="h-8 w-8 text-white" />
-                </div>
-                
-                <div className="space-y-4">
-                  <h3 className="text-2xl font-bold text-primary group-hover:text-primary-glow transition-colors">
+              <div className="relative w-full h-full transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+                {/* Front Side */}
+                <div className="absolute inset-0 w-full h-full backface-hidden bg-gradient-card rounded-2xl p-8 shadow-elegant flex flex-col items-center justify-center text-center">
+                  <div className={`w-20 h-20 bg-gradient-to-br ${feature.color} rounded-2xl flex items-center justify-center shadow-glow mb-6`}>
+                    <feature.icon className="h-10 w-10 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-primary">
                     {feature.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                </div>
+
+                {/* Back Side */}
+                <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 bg-gradient-card rounded-2xl p-8 shadow-elegant flex flex-col justify-center">
+                  <div className={`w-16 h-16 bg-gradient-to-br ${feature.color} rounded-2xl flex items-center justify-center shadow-glow mb-6 mx-auto`}>
+                    <feature.icon className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-primary mb-4 text-center">
+                    {feature.title}
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed text-center">
                     {feature.description}
                   </p>
                 </div>
-                
-                <Button variant="feature" className="w-full">
-                  Learn More
-                </Button>
               </div>
-              
-              {/* Background pattern */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-accent/10 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </div>
           ))}
         </div>

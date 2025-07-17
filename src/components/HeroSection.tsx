@@ -11,13 +11,13 @@ const HeroSection = () => {
       }}
     >
       {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-primary/70 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-primary/30 backdrop-blur-sm"></div>
       
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-            Breaking Sound Barriers with{" "}
-            <span className="text-accent">Technology</span>
+            Breaking Sound{" "}
+            <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Barriers</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed">

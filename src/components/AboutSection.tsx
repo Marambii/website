@@ -1,4 +1,4 @@
-import signLanguageAvatar from "@/assets/sign-language-avatar.jpg";
+import africanProfessional from "@/assets/african-professional.jpg";
 import { Heart, Users, Zap } from "lucide-react";
 
 const AboutSection = () => {
@@ -59,8 +59,8 @@ const AboutSection = () => {
           <div className="relative">
             <div className="relative">
               <img
-                src={signLanguageAvatar}
-                alt="Person performing sign language"
+                src={africanProfessional}
+                alt="African professional representing our community"
                 className="w-full max-w-lg mx-auto rounded-2xl shadow-elegant"
               />
               <div className="absolute -inset-4 bg-gradient-hero rounded-2xl opacity-20 blur-xl"></div>

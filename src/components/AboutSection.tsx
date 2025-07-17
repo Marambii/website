@@ -59,8 +59,8 @@ const AboutSection = () => {
           <div className="relative">
             <div className="relative">
               <img
-                src={africanProfessional}
-                alt="African professional representing our community"
+                src="/lovable-uploads/a193b214-c6d4-468b-a2f4-e2d389e7507c.png"
+                alt="Person performing sign language gesture"
                 className="w-full max-w-lg mx-auto rounded-2xl shadow-elegant"
               />
               <div className="absolute -inset-4 bg-gradient-hero rounded-2xl opacity-20 blur-xl"></div>

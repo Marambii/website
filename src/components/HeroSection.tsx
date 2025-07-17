@@ -16,21 +16,21 @@ const HeroSection = () => {
       id="home" 
       className="min-h-screen relative flex items-center justify-center bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url('/lovable-uploads/a7b42fcf-ab92-49b4-b0cd-c0e65b3abaa2.png')`
+        backgroundImage: `url('/uploads/a7b42fcf-ab92-49b4-b0cd-c0e65b3abaa2.png')`
       }}
     >
       {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-primary/50 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-black/50"></div>
       
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-            Breaking Sound{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Barriers</span>
+            Redefining inclusive{" "}
+            <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Learning</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed">
-            Empowering the deaf community through innovative software solutions that bridge communication gaps with text-to-sign, sign-to-text, and speech-to-text technologies.
+          Educational toolkit that assists learners with hearing disabilities, bringing inclusivity to the education sector.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

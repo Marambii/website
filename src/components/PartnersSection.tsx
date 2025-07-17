@@ -1,60 +1,52 @@
-const PartnersSection = () => {
-  const partners = [
-    {
-      name: "Jomo Kenyatta University of Agriculture and Technology",
-      logo: "/lovable-uploads/520b1a83-82ad-414f-a175-122ec0c1f13d.png",
-      description: "Leading agricultural and technology innovation"
-    },
-    {
-      name: "JHUB Africa",
-      logo: "/lovable-uploads/989284ce-332a-4145-aa81-5bc3cba070a2.png",
-      description: "Driving innovations for transformation across Africa"
-    }
-  ];
+import { motion } from "framer-motion";
+import jkuat from "/uploads/JKUAT.png"
+import jhub from "/uploads/JHUB.png"
 
-  return (
-    <section id="partners" className="py-20 bg-gradient-card">
-      <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Our Partners
-          </h2>
-          <div className="w-20 h-1 bg-gradient-to-r from-primary to-accent rounded-full mx-auto mb-6"></div>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Collaborating with leading institutions to bring inclusive technology solutions to life
-          </p>
-        </div>
+const partners = [
+  {
+    name: "Jomo Kenyatta University of Agriculture and Technology",
+    imgSrc: jkuat,
+    url: "https://www.jkuat.ac.ke/",
+    alt: "JKUAT Logo"
+  },
+  {
+    name: "JHUB Africa",
+    imgSrc: jhub,
+    url: "https://jhubafrica.com/",
+    alt: "JHUB Africa Logo"
+  }
+];
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-          {partners.map((partner, index) => (
-            <div 
-              key={index}
-              className="group bg-background rounded-2xl p-8 shadow-elegant hover:shadow-glow transition-all duration-500 hover:-translate-y-2"
-            >
-              <div className="flex flex-col items-center text-center space-y-6">
-                <div className="w-32 h-32 flex items-center justify-center bg-white rounded-xl shadow-md group-hover:scale-105 transition-transform duration-300">
-                  <img
-                    src={partner.logo}
-                    alt={`${partner.name} logo`}
-                    className="max-w-full max-h-full object-contain p-4"
-                  />
-                </div>
-                
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold text-primary group-hover:text-primary-glow transition-colors">
-                    {partner.name}
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {partner.description}
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
+const PartnersSection = () => (
+  <section className="py-20 bg-gradient-to-b from-primary/10 to-transparent">
+    <div className="max-w-4xl mx-auto text-center mb-10">
+      <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">Our Partners</h2>
+      <p className="text-primary text-lg">We proudly collaborate with leading institutions to drive innovation and inclusivity.</p>
+    </div>
+    <div className="flex flex-wrap justify-center items-center gap-12">
+      {partners.map((partner, idx) => (
+        <motion.a
+          key={partner.name}
+          href={partner.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: idx * 0.2 }}
+          className="block"
+          title={partner.name}
+        >
+          <img
+            src={partner.imgSrc}
+            alt={partner.alt}
+            className="h-24 md:h-28 object-contain mx-auto drop-shadow-lg hover:scale-105 transition-transform duration-300"
+            style={{ background: "bg-cyan-700", borderRadius: 12, padding: 8 }}
+          />
+        </motion.a>
+      ))}
+    </div>
+  </section>
+);
 
-export default PartnersSection;
+export default PartnersSection; 

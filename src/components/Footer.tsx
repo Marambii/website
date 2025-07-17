@@ -53,15 +53,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-accent" />
-                <span className="text-primary-foreground/80 text-sm">hello@instrumate-africa.com</span>
+                <span className="text-primary-foreground/80 text-sm">info@instrumate-africa.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-4 w-4 text-accent" />
-                <span className="text-primary-foreground/80 text-sm">+254 700 123 456</span>
+                <span className="text-primary-foreground/80 text-sm">+254 797 487 507</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-4 w-4 text-accent" />
-                <span className="text-primary-foreground/80 text-sm">Nairobi, Kenya</span>
+                <span className="text-primary-foreground/80 text-sm">Juja, Kenya</span>
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@ const Footer = () => {
         {/* Bottom section */}
         <div className="border-t border-primary-foreground/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-primary-foreground/60 text-sm">
-            © 2024 Instrumate Africa. All rights reserved.
+            © 2025 Instrumate Africa. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-primary-foreground/60 hover:text-accent text-sm transition-colors">Privacy Policy</a>

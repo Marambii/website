@@ -4,52 +4,52 @@ import { Linkedin, Github, Mail } from "lucide-react";
 const TeamSection = () => {
   const teamMembers = [
     {
-      name: "Sarah Okafor",
-      role: "CEO & Co-Founder",
-      bio: "Passionate advocate for inclusive technology with 10+ years in accessibility solutions.",
+      name: "Lawrence Nderu",
+      role: "Project Inspector",
+      bio: "Ensuring quality and compliance across all development phases with meticulous attention to detail.",
       linkedin: "#",
       github: "#",
-      email: "sarah@instrumate-africa.com"
+      email: "lawrence@instrumate-africa.com"
     },
     {
-      name: "Michael Asante",
-      role: "CTO & Co-Founder", 
-      bio: "AI/ML expert specializing in computer vision and natural language processing.",
+      name: "Francis Mung'ang'u",
+      role: "Team Lead & API Developer", 
+      bio: "Leading the development team while architecting robust API solutions for seamless integration.",
       linkedin: "#",
       github: "#",
-      email: "michael@instrumate-africa.com"
+      email: "francis@instrumate-africa.com"
     },
     {
-      name: "Amina Hassan",
-      role: "Head of Product Design",
-      bio: "UX designer focused on creating intuitive interfaces for assistive technologies.",
+      name: "John Njuki",
+      role: "Backend Developer",
+      bio: "Building scalable server-side solutions and database architectures for optimal performance.",
       linkedin: "#",
       github: "#",
-      email: "amina@instrumate-africa.com"
+      email: "john@instrumate-africa.com"
     },
     {
-      name: "David Kimani",
-      role: "Lead AI Engineer",
-      bio: "Computer vision specialist with expertise in gesture recognition and ML algorithms.",
+      name: "Baruch Marambi",
+      role: "Frontend Developer",
+      bio: "Creating intuitive user interfaces and responsive web applications for exceptional user experience.",
       linkedin: "#",
       github: "#",
-      email: "david@instrumate-africa.com"
+      email: "baruch@instrumate-africa.com"
     },
     {
-      name: "Fatima Al-Rashid",
-      role: "Community Outreach Manager",
-      bio: "Deaf community advocate ensuring our solutions meet real-world needs.",
+      name: "Mary Muragu",
+      role: "Research And Integration",
+      bio: "Conducting research and ensuring seamless integration of cutting-edge technologies and solutions.",
       linkedin: "#",
       github: "#",
-      email: "fatima@instrumate-africa.com"
+      email: "mary@instrumate-africa.com"
     },
     {
-      name: "Joseph Ngozi",
-      role: "Senior Software Developer",
-      bio: "Full-stack developer with focus on real-time communication systems and mobile apps.",
+      name: "Nevean Adhiambo",
+      role: "UI/UX Developer",
+      bio: "Designing accessible and beautiful user experiences that prioritize inclusivity and usability.",
       linkedin: "#",
       github: "#",
-      email: "joseph@instrumate-africa.com"
+      email: "nevean@instrumate-africa.com"
     }
   ];
 

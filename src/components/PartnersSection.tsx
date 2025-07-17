@@ -1,7 +1,7 @@
 const PartnersSection = () => {
   const partners = [
     {
-      name: "Kenyatta University",
+      name: "Jomo Kenyatta University of Agriculture and Technology",
       logo: "/lovable-uploads/520b1a83-82ad-414f-a175-122ec0c1f13d.png",
       description: "Leading agricultural and technology innovation"
     },

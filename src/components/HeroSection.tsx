@@ -11,7 +11,7 @@ const HeroSection = () => {
       }}
     >
       {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-primary/30 backdrop-blur-sm"></div>
+      <div className="absolute inset-0 bg-primary/50 backdrop-blur-sm"></div>
       
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
